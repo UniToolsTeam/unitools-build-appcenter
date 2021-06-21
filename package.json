@@ -1,0 +1,21 @@
+{
+  "displayName": "UniTools.Build.AppCenter",
+  "name": "com.unitools.build.appcenter",
+  "version": "0.0.0",
+  "unity": "2019.1",
+  "dependencies": {
+    "com.unitools.cli": "0.0.0",
+    "com.unitools.io": "0.0.0",
+    "com.unitools.build": "0.0.0"
+  },
+  "keywords": [
+    "unity",
+    "unity3d",
+    "cli",
+    "CI",
+    "CD",
+    "C#"
+  ],
+  "category": "Libraries",
+  "type": "library"
+}
