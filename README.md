@@ -2,8 +2,12 @@
 Build steps to distribute the artifact to the AppCenter
 
 # Features
-- Using of the AppCenter CLI 
-- Change defines set based for any build target
+- Using of the [AppCenter CLI](https://docs.microsoft.com/en-us/appcenter/cli/) deploy mobile builds (.ipa and .apk) to the App Center application
+
+# Dependencies
+- [UniTools CLI](https://github.com/UniToolsTeam/unitools-cli)
+- [UniTools IO](https://github.com/UniToolsTeam/unitools-io)
+- [UniTools Build](https://github.com/UniToolsTeam/unitools-build)
 
 # Installation
 
@@ -19,7 +23,10 @@ Add the following to `Packages/manifest.json` where x.x.x the version (tag) chec
 ```
 {
   "dependencies": {
-    "com.unitools.io": "https://github.com/UniToolsTeam/unitools-defines.git#x.x.x",
+    "com.unitools.cli": "https://github.com/UniToolsTeam/unitools-cli.git#x.x.x",
+    "com.unitools.io": "https://github.com/UniToolsTeam/unitools-io.git#x.x.x",
+    "com.unitools.build": "https://github.com/UniToolsTeam/unitools-build.git#x.x.x",
+    "com.unitools.appcenter": "https://github.com/UniToolsTeam/unitools-build-appcenter.git#x.x.x",
     "...": "..."
   }
 }
