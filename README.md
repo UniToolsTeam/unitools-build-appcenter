@@ -2,7 +2,7 @@
 Build steps to distribute the artifact to the AppCenter
 
 # Features
-- Using of the [AppCenter CLI](https://docs.microsoft.com/en-us/appcenter/cli/) deploy mobile builds (.ipa and .apk) to the App Center application
+- Deploy mobile builds (.ipa and .apk) to the App Center application using [AppCenter CLI](https://docs.microsoft.com/en-us/appcenter/cli/)
 
 # Dependencies
 - [UniTools CLI](https://github.com/UniToolsTeam/unitools-cli)
@@ -10,6 +10,7 @@ Build steps to distribute the artifact to the AppCenter
 - [UniTools Build](https://github.com/UniToolsTeam/unitools-build)
 
 # Installation
+Install [AppCenter CLI](https://docs.microsoft.com/en-us/appcenter/cli/)
 
 ### Download
 [Latest Releases](../../releases/latest)
