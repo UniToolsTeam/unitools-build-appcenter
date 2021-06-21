@@ -8,13 +8,15 @@
     "com.unitools.io": "0.0.0",
     "com.unitools.build": "0.0.0"
   },
+  "description": "Part of the Customizable Build Pipeline tool to work with AppCenter API",
   "keywords": [
-    "unity",
+    "appcenter",
+    "build",
     "unity3d",
-    "cli",
-    "CI",
-    "CD",
-    "C#"
+    "ci-cd",
+    "build-tool",
+    "ci-cd-pipeline",
+    "unity-tool"
   ],
   "category": "Libraries",
   "type": "library"
