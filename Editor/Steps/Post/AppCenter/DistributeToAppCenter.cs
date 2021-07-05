@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using UniTools.CLI;
 using UniTools.IO;
@@ -26,6 +27,8 @@ namespace UniTools.Build.AppCenter
                 $" --group {m_group}" +
 #elif UNITY_EDITOR_OSX
                 $" --group \"{m_group}\"" +
+#else
+                throw new Exception($"{nameof(DistributeToAppCenter)}: {m_group} not adjusted!");
 #endif
                 $" --token {m_apiToken}";
 
