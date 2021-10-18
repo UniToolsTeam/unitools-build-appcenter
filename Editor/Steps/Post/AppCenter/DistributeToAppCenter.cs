@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using UniTools.CLI;
 using UniTools.IO;
@@ -22,7 +23,13 @@ namespace UniTools.Build.AppCenter
             string command = $"distribute release " +
                 $" --app {m_appName}" +
                 $" --file {m_builtFilePath.ToString()}" +
+#if UNITY_EDITOR_WIN
+                $" --group {m_group}" +
+#elif UNITY_EDITOR_OSX
                 $" --group \"{m_group}\"" +
+#else
+                throw new Exception($"{nameof(DistributeToAppCenter)}: {m_group} not adjusted!");
+#endif
                 $" --token {m_apiToken}";
 
             ToolResult result = Cli.Tool<CLI.AppCenter>().Execute(command, ProjectPath.Value);

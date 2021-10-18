@@ -1,4 +1,4 @@
-# UniTools Build AppCenter
+  # UniTools Build AppCenter
 Build steps to distribute the artifact to the AppCenter
 
 # Features
@@ -28,11 +28,23 @@ Add the following to `Packages/manifest.json` where x.x.x the version (tag) chec
     "com.unitools.cli": "https://github.com/UniToolsTeam/unitools-cli.git#x.x.x",
     "com.unitools.io": "https://github.com/UniToolsTeam/unitools-io.git#x.x.x",
     "com.unitools.build": "https://github.com/UniToolsTeam/unitools-build.git#x.x.x",
-    "com.unitools.appcenter": "https://github.com/UniToolsTeam/unitools-build-appcenter.git#x.x.x",
+    "com.unitools.build.appcenter": "https://github.com/UniToolsTeam/unitools-build-appcenter.git#x.x.x",
     "...": "..."
   }
 }
 ```
 
 # Getting Started
-In progress..
+
+To deploy the build to the App Center, follow the instructions: 
+
+1. Create a post-build step through UniTools/Build/Steps/AppCenter/Post/DistributeToAppCenter in the Create Asset menu.
+![File](file.png)
+
+2. Fill in the data in the Inspector window:
+![Inspector Window](InspectorWindow.png)
+
+Where,
+- App Name - application name ```{owner-name}/{app-name}```, that you can find from an App Center URL, it's in the format ```https://appcenter.ms/users/{owner-name}/apps/{app-name}```. For more details and instructions on how to get the app name using App Center CLI go to this link https://docs.microsoft.com/en-us/appcenter/api-docs/#find-your-app-center-app-name-and-owner-name
+- Group - destination group, the default value is "Collaborators"
+- Api Token - app API token https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-app-api-token
