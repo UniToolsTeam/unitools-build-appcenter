@@ -1,20 +1,22 @@
 {
   "displayName": "UniTools.Build.AppCenter",
   "name": "com.unitools.build.appcenter",
-  "version": "0.0.0",
+  "version": "0.0.1-preview",
   "unity": "2019.1",
   "dependencies": {
-    "com.unitools.cli": "0.0.0",
-    "com.unitools.io": "0.0.0",
-    "com.unitools.build": "0.0.0"
+    "com.unitools.cli": "0.0.1-preview",
+    "com.unitools.io": "0.0.1-preview",
+    "com.unitools.build": "0.0.1-preview"
   },
+  "description": "Part of the Customizable Build Pipeline tool to work with AppCenter API",
   "keywords": [
-    "unity",
+    "appcenter",
+    "build",
     "unity3d",
-    "cli",
-    "CI",
-    "CD",
-    "C#"
+    "ci-cd",
+    "build-tool",
+    "ci-cd-pipeline",
+    "unity-tool"
   ],
   "category": "Libraries",
   "type": "library"
