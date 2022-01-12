@@ -5,7 +5,6 @@
   "unity": "2019.1",
   "dependencies": {
     "com.unitools.cli": "0.0.1-preview",
-    "com.unitools.io": "0.0.1-preview",
     "com.unitools.build": "0.0.1-preview"
   },
   "description": "Part of the Customizable Build Pipeline tool to work with AppCenter API",
