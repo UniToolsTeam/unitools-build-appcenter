@@ -12,9 +12,9 @@ namespace UniTools.Build.AppCenter
     )]
     public sealed class DistributeToAppCenter : ScriptablePostBuildStep
     {
+        [SerializeField] private string m_apiToken = default;
         [SerializeField] private string m_appName = default;
         [SerializeField] private string m_group = "Collaborators";
-        [SerializeField] private string m_apiToken = default;
         [SerializeField] private PathProperty m_builtFilePath = default;
 
         public override async Task Execute(string pathToBuiltProject)
