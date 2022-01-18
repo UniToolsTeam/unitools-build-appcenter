@@ -30,6 +30,8 @@ namespace UniTools.Build.AppCenter
 #else
                 throw new Exception($"{nameof(DistributeToAppCenter)}: {m_group} not adjusted!");
 #endif
+                
+                $" --build-version {Application.version}" +
                 $" --token {m_apiToken}";
 
             ToolResult result = Cli.Tool<CLI.AppCenter>().Execute(command, ProjectPath.Value);

@@ -9,7 +9,6 @@ namespace UniTools.CLI
         , ICliToolFriendlyName
         , ICliToolHelpLink
     {
-        public const string ToolName = "appcenter";
 
         private readonly CommandLine m_commandLine = default;
         private string m_version = string.Empty;
