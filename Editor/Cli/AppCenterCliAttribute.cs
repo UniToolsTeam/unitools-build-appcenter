@@ -1,18 +1,18 @@
 using System;
 
-namespace UniTools.CLI
+namespace UniTools.Build
 {
-    public sealed class AppCenterAttribute : BaseCliToolAttribute
+    public sealed class AppCenterCliAttribute : BaseCliToolAttribute
     {
         private const string ToolName = "appcenter";
 
-        public AppCenterAttribute() : base(ToolName)
+        public AppCenterCliAttribute() : base(ToolName)
         {
         }
 
         public override BaseCliTool Create()
         {
-            return new AppCenter(
+            return new AppCenterCli(
                 PathResolver.Default.Execute(ToolName).Output.Split(Environment.NewLine.ToCharArray())?[0],
                 CommandLine.Default);
         }

@@ -1,10 +1,10 @@
-using UniTools.CLI;
+using UniTools.Build;
 
-[assembly: AppCenter]
+[assembly: AppCenterCli]
 
-namespace UniTools.CLI
+namespace UniTools.Build
 {
-    public sealed class AppCenter : BaseCliTool
+    public sealed class AppCenterCli : BaseCliTool
         , ICliToolVersion
         , ICliToolFriendlyName
         , ICliToolHelpLink
@@ -13,7 +13,7 @@ namespace UniTools.CLI
         private readonly CommandLine m_commandLine = default;
         private string m_version = string.Empty;
 
-        public AppCenter(string path, CommandLine commandLine)
+        public AppCenterCli(string path, CommandLine commandLine)
         {
             Path = path;
             m_commandLine = commandLine;

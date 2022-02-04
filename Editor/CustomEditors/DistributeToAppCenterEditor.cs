@@ -1,4 +1,3 @@
-using UniTools.CLI;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,7 +6,7 @@ namespace UniTools.Build.AppCenter
     [CustomEditor(typeof(DistributeToAppCenter))]
     public sealed class DistributeToAppCenterEditor : Editor
     {
-        private CLI.AppCenter m_cli = default;
+        private AppCenterCli m_cli = default;
 
         private SerializedProperty m_apiToken = default;
         private SerializedProperty m_appName = default;
@@ -17,7 +16,7 @@ namespace UniTools.Build.AppCenter
 
         private void OnEnable()
         {
-            m_cli = Cli.Tool<CLI.AppCenter>();
+            m_cli = Cli.Tool<AppCenterCli>();
             m_apiToken = serializedObject.FindProperty(nameof(m_apiToken));
             m_appName = serializedObject.FindProperty(nameof(m_appName));
 

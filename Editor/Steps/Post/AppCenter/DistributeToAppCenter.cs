@@ -1,5 +1,4 @@
 using System.Threading.Tasks;
-using UniTools.CLI;
 using UniTools.IO;
 using UnityEngine;
 
@@ -33,7 +32,7 @@ namespace UniTools.Build.AppCenter
                 $" --build-version {Application.version}" +
                 $" --token {m_apiToken}";
 
-            ToolResult result = Cli.Tool<CLI.AppCenter>().Execute(command, ProjectPath.Value);
+            ToolResult result = Cli.Tool<AppCenterCli>().Execute(command, ProjectPath.Value);
 
             if (result.ExitCode != 0)
             {
