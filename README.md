@@ -47,4 +47,5 @@ To deploy the build to the App Center, follow the instructions:
 Where,
 - App Name - application name ```{owner-name}/{app-name}```, that you can find from an App Center URL, it's in the format ```https://appcenter.ms/users/{owner-name}/apps/{app-name}```. For more details and instructions on how to get the app name using App Center CLI go to this link https://docs.microsoft.com/en-us/appcenter/api-docs/#find-your-app-center-app-name-and-owner-name
 - Group - destination group, the default value is "Collaborators"
+- If AppCenter is not setuped then need firstly install or update Node.js (Node.js) and then in Command Prompt enter `npm install -g appcenter-cli` and wait while downloading complete.
 - Api Token - app API token https://docs.microsoft.com/en-us/appcenter/api-docs/#creating-an-app-center-app-api-token
