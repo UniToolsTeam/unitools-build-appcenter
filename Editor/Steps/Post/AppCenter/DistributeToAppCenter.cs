@@ -6,7 +6,7 @@ namespace UniTools.Build.AppCenter
 {
     [CreateAssetMenu(
         fileName = nameof(DistributeToAppCenter),
-        menuName = nameof(UniTools) + "/Build/Steps/" + nameof(AppCenter) + "/Post/" + nameof(DistributeToAppCenter)
+        menuName = nameof(UniTools) + "/Build/" + nameof(AppCenter) + "/" + nameof(DistributeToAppCenter)
     )]
     public sealed class DistributeToAppCenter : ScriptableCustomBuildStep
     {
@@ -36,7 +36,7 @@ namespace UniTools.Build.AppCenter
 
             if (result.ExitCode != 0)
             {
-                throw new PostBuildStepFailedException($"{nameof(DistributeToAppCenter)}: Failed! {result.ToString()}");
+                throw new BuildStepFailedException($"{nameof(DistributeToAppCenter)}: Failed! {result.ToString()}");
             }
         }
     }
