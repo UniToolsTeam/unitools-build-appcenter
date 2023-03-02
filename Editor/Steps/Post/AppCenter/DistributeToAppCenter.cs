@@ -8,7 +8,7 @@ namespace UniTools.Build.AppCenter
         fileName = nameof(DistributeToAppCenter),
         menuName = nameof(UniTools) + "/Build/" + nameof(AppCenter) + "/" + nameof(DistributeToAppCenter)
     )]
-    public sealed class DistributeToAppCenter : ScriptableCustomBuildStep
+    public sealed class DistributeToAppCenter : BuildStep
     {
         [SerializeField] private string m_apiToken = default;
         [SerializeField] private string m_appName = default;
