@@ -6,7 +6,7 @@ namespace UniTools.Build.AppCenter
 {
     [CreateAssetMenu(
         fileName = nameof(DistributeToAppCenter),
-        menuName = nameof(UniTools) + "/Build/" + nameof(AppCenter) + "/" + nameof(DistributeToAppCenter)
+        menuName = MenuPaths.Steps + nameof(AppCenter) + "/" + nameof(DistributeToAppCenter)
     )]
     public sealed class DistributeToAppCenter : BuildStep
     {
